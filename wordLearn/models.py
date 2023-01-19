@@ -5,6 +5,7 @@ class Word(models.Model):
     part = models.CharField(max_length=20)
     eng_meaning = models.CharField(max_length=250)
     polish = models.CharField(max_length=310)
+    level = models.CharField(max_length=20)
 
     def __str__(self):
         return f"{self.id} {self.english}"

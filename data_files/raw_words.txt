@@ -467,7 +467,6 @@ acute-angled {adj} (geometry) :: ostrokątny
 acute-angled triangle {n} (acute triangle) SEE: acute triangle ::
 acute triangle {n} (triangle all of the angles of which are acute) :: trójkąt ostrokątny {m}
 acyclovir {n} (drug) :: acyklowir {m}
-AD {adv} (anno Domini) :: po Chr. (po Chrystusie); p.n.Chr. (po narodzeniu Chrystusa)
 Adam {prop} (first man in Abrahamic religions) :: Adam {m}
 Adam {prop} (male given name) :: Adam {m}
 Adam and Eve {prop} (the first man and woman (according to Genesis)) :: Adam i Ewa
@@ -1485,7 +1484,6 @@ angle {n} (geometrical figure) :: kąt {m-in}
 angle {n} (measure of such a figure) :: kąt {m-in}, miara kąta {f}
 angle {n} (corner where two walls intersect) :: kąt {m-in}, węgieł {m-in}, róg {m-in}, winkiel {m}
 angle {n} (viewpoint) :: punkt widzenia {m-in}, kąt {m}
-Angle {n} (A member of the ancient Germanic tribe) :: Angl {m}
 angle of attack {n} (angle between the chord line of an airfoil and the airflow over it) :: kąt natarcia
 angler {n} (person who fishes with a hook and line) :: wędkarz {m}
 anglerfish {n} (fish of the bony fish order Lophiiformes) :: diabeł morski {m}, żabnica {f}
@@ -6702,7 +6700,6 @@ chamois {n} (A goat-like antelope) :: kozica {f}
 chamois {n} (cloth) :: giemza {f}
 chamois leather {n} (suede leather) SEE: suede ::
 champagne {n} (sparkling white wine produced in Champagne) :: szampan {m}
-Champagne {n} (region of France) :: Szampania {f}
 Champagne {n} (champagne) SEE: champagne ::
 champian {n} (field of inquiry or study) SEE: field ::
 champian {n} (flat expanse of land) SEE: plain ::
@@ -15827,7 +15824,6 @@ go crazy {v} (go nuts) SEE: go nuts ::
 god {n} :: bóg {m}, bóstwo {n}
 god {n} (idol) :: idol {m}
 God {prop} :: Bóg {m}
-God {n} (an omnipotent being) :: Bóg {m}
 God bless you {interj} (said as a short prayer for the recipient) :: niech cię Bóg błogosławi, szczęść Boże
 God bless you {interj} (said to somebody who has sneezed) :: na zdrowie
 God complex {n} (narcissistic personality disorder) :: Kompleks Boga
@@ -20644,7 +20640,6 @@ Ladoga {prop} (a lake in Russia) :: Ładoga {f}
 lady {n} (woman of breeding and authority) :: pani {f}, dama {f}
 lady {n} (wife of a lord) :: pani {f}, lady {f}
 lady {n} (polite term referring a woman) :: pani {f}
-Lady {n} (aristocratic title for a woman) :: Pani
 ladybird {n} (member of Coccinellidae) :: biedronka {f}, boża krówka {f}
 ladyboy {n} (effeminate homosexual man, especially an intergender person, see also: kathoey) :: ladyboy {m}
 ladybug {n} (ladybird) SEE: ladybird ::
@@ -22737,8 +22732,6 @@ mass {n} (physics: quantity of matter which a body contains) :: masa {f}
 mass {n} (religion: Eucharist) :: msza {f}
 mass {n} (religion: celebration of the Eucharist) :: msza {f}
 mass {n} (musical setting of parts of the mass) :: msza
-Mass {n} (Roman Catholic Church: the principal liturgical service) :: msza {f}
-Mass {n} (a musical composition set to portions of the Mass) :: msza {f}
 Massachusetts {prop} (a state of the United States of America) :: Massachusetts {n}
 massacre {n} (intentional mass killing) :: masakra {f}, rzeź {f}
 massage {n} (rubbing, kneading, or hitting muscled part of a body) :: masaż {m}
@@ -26041,8 +26034,6 @@ Orpheus {prop} (the musician who searched for Eurydice) :: Orfeusz {m}
 orthoclase {n} (potassium aluminum silicate) :: ortoklaz {m}
 orthodontist {n} (orthodontic dentist) :: ortodonta {m}
 orthodox {adj} (conforming to accepted, established, or traditional doctrines of a given faith, religion, or ideology) :: ortodoksyjny, prawowierny
-Orthodox {adj} (of the Orthodox Churches) :: prawosławny, (generic prawowierny or Ukrainian orthodox Greek Catholic)
-Orthodox {adj} (of Orthodox Judaism) :: ortodoksyjny (Judaizm)
 Orthodox Church {n} (the Eastern body of Christendom) :: cerkiew prawosławna {f}
 orthodoxy {n} (the beliefs and practices of the Eastern Orthodox Church) SEE: Orthodoxy ::
 Orthodoxy {prop} (the Eastern Orthodox Church and its foundations) :: prawosławie {n}
@@ -28122,7 +28113,6 @@ pole {n} (extreme of an axis) :: biegun {m}
 pole {n} (magnetic point) :: biegun {m}
 pole {n} (contact on an electrical device) :: biegun {m}
 pole {n} (isolated point of a meromorphic function (complex analysis)) :: biegun {m}
-Pole {n} (person from Poland) :: Polak {m}, Polka {f}
 polecat {n} (Mustela putorius) :: tchórz {?}
 polecat {n} (skunk) SEE: skunk ::
 polemic {n} (argument or controversy) :: polemika {f}
@@ -31108,7 +31098,6 @@ Roman {prop} (male given name) :: Roman {m}
 Roman alphabet {n} (Latin alphabet) SEE: Latin alphabet ::
 Roman Catholic {adj} (of or pertaining to the Roman Catholic Church) :: rzymskokatolicki
 romance {n} (intimate relationship, love affair) :: romans {m}
-Romance {adj} (of or dealing with languages or cultures derived from Roman influence and Latin) :: romański {m}
 Roman Empire {prop} (ancient Latin empire) :: Cesarstwo Rzymskie {n}, Imperium Rzymskie {n}
 Romanesque {adj} (Applied to the debased style of the later Roman empire) :: romański
 Romani {n} (member of the Roma people) SEE: Rom ::
@@ -31538,7 +31527,6 @@ sailor {n} (person who sails as a sport) :: żeglarz {m}, żeglarka {f}
 sailplane {n} (sailplane) SEE: glider ::
 sainfoin {n} (perennial herbs) :: sparceta {f}
 saint {n} (person proclaimed as saint) :: święty {m}, święta {f}
-Saint {n} (title given to a saint) :: Święty {m}, Święta {f}
 Saint Andrew's cross {n} (cross that has a form of two intersecting oblique bars) :: krzyż świętego Andrzeja {m}
 Saint Andrew's Day {prop} :: Andrzejki
 Saint Barbara {prop} (saint) :: Święta Barbara {f}

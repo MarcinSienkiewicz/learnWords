@@ -1,30 +1,11 @@
+from .clean_data import add_word_level, clean_data_file  # prepare input for db
+from .db_queries import query_me, populate_db
 from django.shortcuts import render
-from django.db import connection
 
 
-def hdd_data():
-    from pathlib import Path
-
-    src = (Path(__file__).parents[1] / 'data_files/parsed_data.txt')
-    with open(src, encoding='utf-8') as file:
-        for_db = [x.replace('\n', '') for x in file.readlines()]    
-    return for_db
-
-
-def populate_db():
-    for_db = hdd_data()
-    print(*for_db[5550:5560], sep='\n')
+def home_view(request):    
+    # clean_data_file()  # run once to clean input data file    
+    # add_word_level() # run once to get final version - ready to populate database
     
-    c = connection.cursor()
-
-    # populate db here (using SQL command or cmd and sqlite3.exe)
-    c.execute('SELECT * FROM wordLearn_Word LIMIT 5')
-    
-
-    
-
-    
-
-def home_view(request):
     populate_db()
     return render(request, 'home.html')

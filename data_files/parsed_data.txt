@@ -376,7 +376,6 @@ acute angle,rzeczownik,angle measuring less than ninety degrees,kąt ostry
 acute-angled,przymiotnik,geometry,ostrokątny
 acute triangle,rzeczownik,triangle all of the angles of which are acute,trójkąt ostrokątny
 acyclovir,rzeczownik,drug,acyklowir
-AD,przysłówek,anno Domini) :: po Chr. (po Chrystusie); p.n.Chr. (po narodzeniu Chrystusa,po Chr. (po Chrystusie); p.n.Chr. (po narodzeniu Chrystusa)
 adamant,przymiotnik,determined; unshakeable; unyielding,nieustępliwy;zdecydowany
 Adam's apple,rzeczownik,lump in the throat,jabłko Adama
 adaptability,rzeczownik,variability in respect to or under the influence of external conditions,adaptowalność
@@ -1132,7 +1131,6 @@ angle,rzeczownik,geometrical figure,kąt
 angle,rzeczownik,measure of such a figure,kąt;miara kąta
 angle,rzeczownik,corner where two walls intersect,kąt;węgieł;róg;winkiel
 angle,rzeczownik,viewpoint,punkt widzenia;kąt
-Angle,rzeczownik,A member of the ancient Germanic tribe,Angl
 angle of attack,rzeczownik,angle between the chord line of an airfoil and the airflow over it,kąt natarcia
 angler,rzeczownik,person who fishes with a hook and line,wędkarz
 anglerfish,rzeczownik,fish of the bony fish order Lophiiformes,diabeł morski;żabnica
@@ -5044,7 +5042,6 @@ chamfron,rzeczownik,armor,naczółek
 chamois,rzeczownik,A goat-like antelope,kozica
 chamois,rzeczownik,cloth,giemza
 champagne,rzeczownik,sparkling white wine produced in Champagne,szampan
-Champagne,rzeczownik,region of France,Szampania
 champignon,rzeczownik,Agaricus bisporus,pieczarka
 champion,rzeczownik,someone who has been winner in a contest,mistrz;mistrzyni
 championship,rzeczownik,competition to determine a champion,mistrzostwo
@@ -12322,7 +12319,6 @@ goblet,rzeczownik,drinking vessel with a foot and stem,kielich;puchar
 goblet drum,rzeczownik,drum from the Middle-East and North Africa,darbuka
 goblin,rzeczownik,hostile diminutive humanoid in fantasy literature,goblin
 god,rzeczownik,idol,idol
-God,rzeczownik,an omnipotent being,Bóg
 God complex,rzeczownik,narcissistic personality disorder,Kompleks Boga
 goddess,rzeczownik,female deity,bogini
 godfather,rzeczownik,man present at the christening of a baby who promises to help raise the child in a Christian manner,ojciec chrzestny;chrzestny
@@ -15928,7 +15924,6 @@ ladle,rzeczownik,deep-bowled spoon with a long usually curved handle,chochla
 lady,rzeczownik,woman of breeding and authority,pani;dama
 lady,rzeczownik,wife of a lord,pani;lady
 lady,rzeczownik,polite term referring a woman,pani
-Lady,rzeczownik,aristocratic title for a woman,Pani
 ladybird,rzeczownik,member of Coccinellidae,biedronka;boża krówka
 ladyboy,rzeczownik,effeminate homosexual man especially an intergender person see also: kathoey,ladyboy
 lady-in-waiting,rzeczownik,lady in the household of a woman of higher rank who attends he as a personal assistant,dama dworu
@@ -17505,8 +17500,6 @@ mass,rzeczownik,physics: quantity of matter which a body contains,masa
 mass,rzeczownik,religion: Eucharist,msza
 mass,rzeczownik,religion: celebration of the Eucharist,msza
 mass,rzeczownik,musical setting of parts of the mass,msza
-Mass,rzeczownik,Roman Catholic Church: the principal liturgical service,msza
-Mass,rzeczownik,a musical composition set to portions of the Mass,msza
 massacre,rzeczownik,intentional mass killing,masakra;rzeź
 massage,rzeczownik,rubbing kneading or hitting muscled part of a body,masaż
 massage,czasownik,to perform a massage on somebody,masować
@@ -19949,8 +19942,6 @@ orphanhood,rzeczownik,orphanhood,sieroctwo
 orthoclase,rzeczownik,potassium aluminum silicate,ortoklaz
 orthodontist,rzeczownik,orthodontic dentist,ortodonta
 orthodox,przymiotnik,conforming to accepted established or traditional doctrines of a given faith religion or ideology,ortodoksyjny;prawowierny
-Orthodox,przymiotnik,of the Orthodox Churches) :: prawosławny (generic prawowierny or Ukrainian orthodox Greek Catholic,prawosławny;(generic prawowierny or Ukrainian orthodox Greek Catholic)
-Orthodox,przymiotnik,of Orthodox Judaism) :: ortodoksyjny (Judaizm,ortodoksyjny (Judaizm)
 Orthodox Church,rzeczownik,the Eastern body of Christendom,cerkiew prawosławna
 orthoepy,rzeczownik,study of pronunciation,ortoepia
 orthogonality,rzeczownik,the property of being orthogonal,ortogonalność
@@ -21551,7 +21542,6 @@ pole,rzeczownik,extreme of an axis,biegun
 pole,rzeczownik,magnetic point,biegun
 pole,rzeczownik,contact on an electrical device,biegun
 pole,rzeczownik,isolated point of a meromorphic function (complex analysis),biegun
-Pole,rzeczownik,person from Poland,Polak;Polka
 polecat,rzeczownik,Mustela putorius,tchórz
 polemic,rzeczownik,argument or controversy,polemika
 polemology,rzeczownik,study of human conflict and war,polemologia
@@ -23961,7 +23951,6 @@ Roman,rzeczownik,a native or inhabitant of the Roman Empire,Rzymianin;Rzymianka
 Roman,rzeczownik,the Roman script,łacinka
 Roman Catholic,przymiotnik,of or pertaining to the Roman Catholic Church,rzymskokatolicki
 romance,rzeczownik,intimate relationship love affair,romans
-Romance,przymiotnik,of or dealing with languages or cultures derived from Roman influence and Latin,romański
 Romanesque,przymiotnik,Applied to the debased style of the later Roman empire,romański
 Romanian,przymiotnik,of or relating to Romania its people or language,rumuński
 Romanian,rzeczownik,native of Romania,Rumun;Rumunka
@@ -24286,7 +24275,6 @@ sailor,rzeczownik,worker on a ship seaman,marynarz;żeglarz;żeglarka
 sailor,rzeczownik,person who sails as a sport,żeglarz;żeglarka
 sainfoin,rzeczownik,perennial herbs,sparceta
 saint,rzeczownik,person proclaimed as saint,święty;święta
-Saint,rzeczownik,title given to a saint,Święty;Święta
 Saint Andrew's cross,rzeczownik,cross that has a form of two intersecting oblique bars,krzyż świętego Andrzeja
 sake,rzeczownik,Japanese rice wine,sake
 saker,rzeczownik,falcon,raróg
