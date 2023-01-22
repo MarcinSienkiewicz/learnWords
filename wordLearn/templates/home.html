@@ -1,1 +1,31 @@
-<h1>Home site</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {border: 1px solid black; padding: 3px; text-align: center;}
+</style>
+</head>
+<body>
+{% include 'navbar.html' %}
+
+<center>
+<h1>Records in the database: {{ totalRecords }} <h1>
+</center>
+
+<h3>Split per category:</h3>
+<table>
+    <tr style="background-color: black; color: whitesmoke;">
+        <th>Level</th>
+        <th>Word count</th>
+    </tr>
+    {% for level in levels %}
+    <tr>
+        <td> <b>{{ level.0 }} </b></td>
+        <td>{{ level.1 }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
