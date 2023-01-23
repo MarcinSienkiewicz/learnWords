@@ -1,0 +1,38 @@
+{% include 'navbar.html' %}
+
+<center>
+    <form method="POST"> {% csrf_token %}
+        <font size="+1">Translate the below: <br> <br>
+            <input type="text" name="tlumaczenie">
+        </font>
+        <input type="submit" value="Check">
+        <br>
+        <br>
+    </form>
+    
+
+    <table>
+        <tr>
+            <th> <font size="+4"><u>{{ eng }} </u></font></th>
+            <td> <font size="+2"> &nbsp; <i>({{ part }}) </i></font></td>
+        </tr>
+    </table><br>
+    
+    <ul>
+    <table>
+    {% for eng in meaning %}
+    <tr>
+    <td><li><font size="+2"> {{ eng }} </font> </li></td>
+    </tr>
+    {% endfor  %}
+    </ul>
+    </table>
+    <br> <br>
+      
+    
+    <br>
+    {{ speak|safe }}
+    <br> <br>
+    {{ word_img|safe }}
+
+    <br>
