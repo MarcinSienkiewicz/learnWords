@@ -1,0 +1,8 @@
+{% include 'navbar.html' %}
+
+<h1>Test yourself with the following:</h1>
+<form method="GET"> {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Start">
+
+</form>

@@ -1,0 +1,15 @@
+{% include 'navbar.html' %}
+<h1>Guess the following</h1>
+<h4>Replies are not case sensitive.</h4>
+<h4>Use only letters - ignore commas, dots etc.</h4>
+<br>
+
+{% for word in rolled_words %}
+{{ word.0 }} <br>
+{{ word.1 }} <br>
+{{ word.2 }} <br>
+{{ word.3 }} <br>
+{{ word.4 }} <br>
+{{ word.5 }} <br>
+<br> <br>
+{% endfor %}

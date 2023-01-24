@@ -1,4 +1,5 @@
 # database queries go here
+import random
 from django.db import connection
 
 def populate_db():
@@ -54,4 +55,10 @@ def query_me(attr):
             WHERE id=:rolled""", {'rolled':getThisId})
             rolled = c.fetchone()
             if rolled[2] != 'przysłowie':
-                return rolled        
+                return rolled
+
+
+def guessing_game_records(level, how_many):    
+    c = connection.cursor()
+    c.execute("SELECT * FROM wordLearn_word WHERE level LIKE :level",{'level':level})
+    return random.sample(c.fetchall(), int(how_many))   

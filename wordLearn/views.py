@@ -1,8 +1,8 @@
 from .clean_data import add_word_level, clean_data_file  # prepare input for db
-from .db_queries import query_me, populate_db
+from .db_queries import query_me, populate_db, guessing_game_records
 from .utilities import oxford_pron, diki_pron, get_image_url, one_record_context
 from django.shortcuts import render
-
+from .forms import SelectionForm
 
 # database records summary
 def home_view(request):    
@@ -54,14 +54,8 @@ def guess_view(request):
                 result = "Brawo, zgadłeś!"
                 break
         # akceptowalne odpowiedzi jeśli nie odgadnięto
-        if result == 'Nie odgadłeś :/':
-            
-            # v1 - answers in one line            
-            # akceptowalne = f"""<br><br><u>Acceptable answers were:</u> <br>
-            # <font size="+2">
-            # {"; ".join(tlumaczenia)}</font>"""
+        if result == 'Nie odgadłeś :/':            
 
-            # v2 - modify so they are on below another
             akceptowalne = '<br><br>Acceptable answers were:<br><font size="+1"><ul>'            
             for x in tlumaczenia:
                 akceptowalne += f"<li>{x}</li>"            
@@ -73,3 +67,20 @@ def guess_view(request):
             'akceptowalne': akceptowalne,
         }
         return render(request, 'guess_result.html', context)
+
+
+def choose_view(request):
+    if len(request.GET) == 0:
+        form = SelectionForm()
+        return render(request, 'choose_what.html', {'form':form})
+    else:
+        lvl = request.GET.get('level_choices')            
+        how_many = request.GET.get('tries')            
+        
+        # getting words from the database that match user selection
+        selected = guessing_game_records(lvl, how_many)
+        context = {
+            "rolled_words": selected,
+        }
+
+        return render(request, 'guessing_game.html', context)
