@@ -1,3 +1,44 @@
-{% include 'navbar.html' %}
+<!DOCTYPE html>
+<header>
+<style>
+    td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+</style>
+</header>
 
-<h1>Your score</h1>
+<body>
+    {% include 'navbar.html' %}
+
+<center>
+<h1> <u>Your answers and score</u></h1>
+
+<table border="1px" style="text-align: center;">
+    <tr>
+        <th>Question</th>
+        <th>Your reply</th>
+        <th>All valid translations</th>
+        <th>Answer result</th>    
+    </tr>    
+{% for row in wyniki %}
+<tr>
+    <td>{{ row.0 }}</td>
+    <td>{{ row.1 }}</td>    
+    <td>{{ row.2|safe }}</td>
+    <td>{{ row.3 }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</center>
+<br> <br>
+<h2>Responses statistics:</h2>
+No. words: {{ ile_pytan }} <br>
+&nbsp; &nbsp; of which corrently answered: {{ poprawnych }} <br>
+&nbsp; &nbsp; success rate {{ procent_ok }}
+
+</body>
+</html>

@@ -1,6 +1,8 @@
 from .db_queries import query_me
+from pathlib import Path
 from bs4 import BeautifulSoup
 import requests
+import json
 
 def one_record_context():
     rolled = query_me('rnd')  # get one random word from db
@@ -92,3 +94,29 @@ def get_image_url(what):
         img_url = '<h4>No image available</h4>'
     r.close()
     return img_url
+
+# do def result_view(request):
+def calculate_result(user_replies):
+    user_replies = user_replies[:-1].split(";")
+    with open(Path(__file__).parents[1] / 'data_files/current_roll.json') as file:
+        genWords = json.load(file)
+
+    # pl tanslation in genWords[index][4] - checking user translation
+    validTranslations = []  # from json
+    for x in range(len(user_replies)):        
+        validTranslations.append(genWords.get(str(x))[4].split(";"))
+
+    # sprawdzenie czy user zgadł
+    # utworzenie result list
+    # [word asked, word guessed, acceptable translations, is correct reply]
+    # resultList
+    finalSocre = []
+    for x in range(len(user_replies)):
+        finalSocre.append([genWords.get(str(x))[1], user_replies[x], validTranslations[x],
+        "Correct!" if user_replies[x] in validTranslations[x] else "WRONG!"])
+
+    # convert valid answers to html code - one answer per line
+    for x in range(len(finalSocre)):
+        finalSocre[x][2] = "<br>".join(finalSocre[x][2])        
+    
+    return finalSocre

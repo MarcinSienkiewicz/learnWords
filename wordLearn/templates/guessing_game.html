@@ -1,16 +1,35 @@
 {% include 'navbar.html' %}
-<h1>Guess the following</h1>
-<h4>Replies are not case sensitive.</h4>
-<h4>Use only letters - ignore commas, dots etc.</h4>
-<br>
+Replies are not case sensitive <br>
+Use only letters - ignore commas, dots etc <br>
 
-{{ word.1 }} <br>
-{{ word.2 }} <br>
-{{ word.3 }} <br>
-{{ word.4 }} <br>
-{{ word.5 }} <br>
 
+<center>
+    <h2>Guess the below...</h2>
+    <form method="POST"> {% csrf_token %}        
+        <input type="text", name="odgadywane" autofocus> <br> <br>
+        <input type="submit" value="Next">    
+    </form>
+<table>
+    <tr>
+        <th> <font size="+4"><u>{{ word.1 }} </u></font></th>
+        <td> <font size="+2"> &nbsp; <i>({{ word.2 }}) </i></font></td>
+    </tr>
+</table><br>
+
+<ul>
+<table>
+{% for definition in meaning %}
+<tr>
+<td><li><font size="+2"> {{ definition }} </font> </li></td>
+</tr>
+{% endfor  %}
+</ul>
+</table>
 <br> <br>
-<form method="POST"> {% csrf_token %}
-    <input type="submit" value="Next">    
-</form>
+  
+
+<br>
+{{ wordPron|safe }}
+<br> <br>
+{{ wordImage|safe }}
+</center>
