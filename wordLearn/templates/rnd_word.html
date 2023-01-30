@@ -1,13 +1,14 @@
-{% include 'navbar.html' %}
+{% extends 'base.html' %}
+{% block content %}
 
-
-<center>
+<div id="card">
 <table>
     <tr>
         <th> <font size="+4"><u>{{ eng }} </u></font></th>
         <td> <font size="+2"> &nbsp; <i>({{ part }}) </i></font></td>
     </tr>
-</table><br>
+</table><br><br>
+
 
 <ul>
 <table>
@@ -38,3 +39,6 @@
 {{ speak|safe }}
 <br> <br>
 {{ word_img|safe }}
+
+</div>
+{% endblock %}

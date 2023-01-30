@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<header>
-<style>
-    td, th {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-</style>
-</header>
+{% extends 'base.html' %}
 
-<body>
-    {% include 'navbar.html' %}
+{% block content %}
 
 <center>
 <h1> <u>Your answers and score</u></h1>
@@ -40,5 +29,4 @@ No. words: {{ ile_pytan }} <br>
 &nbsp; &nbsp; of which corrently answered: {{ poprawnych }} <br>
 &nbsp; &nbsp; success rate {{ procent_ok }}
 
-</body>
-</html>
+{% endblock %}

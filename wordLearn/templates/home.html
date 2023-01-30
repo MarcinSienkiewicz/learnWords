@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-th, td {border: 1px solid black; padding: 3px; text-align: center;}
-</style>
-</head>
-<body>
-{% include 'navbar.html' %}
+{% extends 'base.html' %}
 
+{% block content %}
 <center>
 <h1>Records in the database: {{ totalRecords }} <h1>
 
-
 <h3>Split per category:</h3>
 <table>
-    <tr style="background-color: black; color: whitesmoke;">
+    <tr>
         <th>Level</th>
         <th>Word count</th>
     </tr>
@@ -27,6 +19,5 @@ th, td {border: 1px solid black; padding: 3px; text-align: center;}
 
 </table>
 </center>
-
+{% endblock %}
 </body>
-</html>

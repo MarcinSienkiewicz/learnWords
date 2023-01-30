@@ -1,35 +1,49 @@
-{% include 'navbar.html' %}
-Replies are not case sensitive <br>
-Use only letters - ignore commas, dots etc <br>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="guessing-bg">
+    <!-- outer containter for three card divs -->
+    <div id="threeParent">
+        <div class="cardChild">
+            <div class="engDisp">{{ word.1 }} </div>        
+            <div class="whatPart">({{ word.2 }}) </div>
+            <br>
+            
+            <center>
+            {{ wordPron|safe }}
+            </center>
+
+            <ul>
+                <table>
+                {% for definition in meaning %}
+                <tr>
+                <td><li><font size="+2"> {{ definition }} </font> </li></td>
+                </tr>
+                {% endfor  %}
+                </ul>
+                </table>
+        </div>    
+
+        
+        <div class="cardChild" id="doPionu">
+            {{ wordImage|safe }}
+        </div>        
 
 
-<center>
-    <h2>Guess the below...</h2>
-    <form method="POST"> {% csrf_token %}        
-        <input type="text", name="odgadywane" autofocus> <br> <br>
-        <input type="submit" value="Next">    
-    </form>
-<table>
-    <tr>
-        <th> <font size="+4"><u>{{ word.1 }} </u></font></th>
-        <td> <font size="+2"> &nbsp; <i>({{ word.2 }}) </i></font></td>
-    </tr>
-</table><br>
+        <div class="cardChild">
+            <br>
+            <span style="color:red; font-weight: 600; font-size: 22px;">Your answer: </span>
+            <form method="POST"> {% csrf_token %} <br>
+                <input type="text", name="odgadywane" autofocus class="userInput"
+                    style="font-size:15px; height: 20px; text-align: center;">
+                <br> <br>
+                <input type="submit" value="Next" class="przycisk"
+                style="font-size: 20px; font-family: sans-serif;">
+            </form>        
+            <br>
+        </div>    
+    </div>
+</div>
 
-<ul>
-<table>
-{% for definition in meaning %}
-<tr>
-<td><li><font size="+2"> {{ definition }} </font> </li></td>
-</tr>
-{% endfor  %}
-</ul>
-</table>
-<br> <br>
-  
-
-<br>
-{{ wordPron|safe }}
-<br> <br>
-{{ wordImage|safe }}
-</center>
+{% endblock %}

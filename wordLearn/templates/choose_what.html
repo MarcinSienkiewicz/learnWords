@@ -1,9 +1,16 @@
-{% include 'navbar.html' %}
+{% extends 'base.html' %}
 
+{% block content %}
+
+<div id="chooseBox">
 <center>
-<h1>Choose settings:</h1>
+<h1 style="text-decoration: underline 2px solid cornflowerblue;">Choose settings:</h1> <br>
 <form method="POST"> {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Start">
+    <br> <br>
+    <input type="submit" value="Start" class="przycisk">
 </form>
 </center>
+</div>
+
+{% endblock %}

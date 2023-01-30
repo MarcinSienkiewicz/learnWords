@@ -76,9 +76,8 @@ def play_view(request):
     
     # get correct entry for display    
     with open(working_file, encoding='utf-8') as file:
-        selected = json.load(file)
+        selected = json.load(file)   
     
-    # print(*selected.items(), sep="\n")
 
     current_page = int(selected.get('page')) + 1
     selected['page'] = str(current_page)
@@ -101,10 +100,7 @@ def play_view(request):
     
     # getting image and pronunciation for word displayed for guessing
     pronURL = oxford_pron(selected[str(current_page)][1])
-    imgURL = get_image_url(selected[str(current_page)][1])    
-    meaning = selected[str(current_page)][3].split(";")
-
-    print(meaning)
+    imgURL = get_image_url(selected[str(current_page)][1])        
 
     context = {
         'word': selected[str(current_page)],        

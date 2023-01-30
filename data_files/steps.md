@@ -11,6 +11,7 @@ To process raw_words.txt file so it is ready for the database run once:
 - clean_data.add_word_level()
 
 ## To do next
+- make 3 cards horizontally for /play/ - word with what it is, image in second, user's reply in third
 - add ability to edit record in database if translation/meaning/part of word is incorrect
 - add ability to delete entry from database if something wrog with it (vulgar?)
 - add about page with explanation how the site works and how to guess words, emphasize that use should pay attention to english meaning and what the words is (given by the site) as the one word can have multiple meanings depending on context and which part of language it is!
