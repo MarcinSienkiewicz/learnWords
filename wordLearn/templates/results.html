@@ -2,31 +2,33 @@
 
 {% block content %}
 
-<center>
-<h1> <u>Your answers and score</u></h1>
+<div id="gridContainer">
+    <h2 id="tableHeader">Your answers and score</h2>
+    <div id="resultsTable">
+        <table id="resultsTableItself">
+            <tr id="headerRowRes">
+                <th>Question</th>
+                <th>Your reply</th>
+                <th>All valid translations</th>
+                <th>Answer result</th>    
+            </tr>    
+        {% for row in wyniki %}
+        <tr style="padding: 2px">
+            <td class="tableBorder">{{ row.0 }}</td>
+            <td class="tableBorder">{{ row.1 }}</td>    
+            <td class="tableBorder">{{ row.2|safe }}</td>
+            <td class="tableBorder">{{ row.3 }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </div>
 
-<table border="1px" style="text-align: center;">
-    <tr>
-        <th>Question</th>
-        <th>Your reply</th>
-        <th>All valid translations</th>
-        <th>Answer result</th>    
-    </tr>    
-{% for row in wyniki %}
-<tr>
-    <td>{{ row.0 }}</td>
-    <td>{{ row.1 }}</td>    
-    <td>{{ row.2|safe }}</td>
-    <td>{{ row.3 }}</td>
-</tr>
-{% endfor %}
-</table>
-
-</center>
-<br> <br>
-<h2>Responses statistics:</h2>
-No. words: {{ ile_pytan }} <br>
-&nbsp; &nbsp; of which corrently answered: {{ poprawnych }} <br>
-&nbsp; &nbsp; success rate {{ procent_ok }}
+    <h2 id="statisticsHeader">Responses statistics:</h2>
+    <div id="statistics">
+        No. words: {{ ile_pytan }} <br>
+        &nbsp; &nbsp; of which corrently answered: {{ poprawnych }} <br>
+        &nbsp; &nbsp; success rate {{ procent_ok }}
+    </div>
+</div>
 
 {% endblock %}

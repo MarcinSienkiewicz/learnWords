@@ -1,49 +1,42 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div id="guessing-bg">
-    <!-- outer containter for three card divs -->
+<h2 style="text-align: center">Provide translateion for the following word</h2>
     <div id="threeParent">
-        <div class="cardChild">
-            <div class="engDisp">{{ word.1 }} </div>        
-            <div class="whatPart">({{ word.2 }}) </div>
-            <br>
-            
-            <center>
-            {{ wordPron|safe }}
-            </center>
 
-            <ul>
-                <table>
-                {% for definition in meaning %}
-                <tr>
-                <td><li><font size="+2"> {{ definition }} </font> </li></td>
-                </tr>
-                {% endfor  %}
-                </ul>
-                </table>
-        </div>    
+        <div class="cardChild">            
+                <div class="guessingEngFirstItem">{{ word.1 }} </div>        
+                <div class="whatPart">({{ word.2 }}) </div>        
+    
+                {{ wordPron|safe }}
+    
+                <ul class="guessingCenterItem">
+                    <table>
+                    {% for definition in meaning %}
+                    <tr>
+                    <td><li><font size="+2"> {{ definition }} </font> </li></td>
+                    </tr>
+                    {% endfor  %}
+                    </ul>
+                    </table>            
+        </div>
 
         
-        <div class="cardChild" id="doPionu">
-            {{ wordImage|safe }}
+        <div class="cardChild">
+            <div id="cardImage">{{ wordImage|safe }}</div>
         </div>        
 
 
-        <div class="cardChild">
-            <br>
-            <span style="color:red; font-weight: 600; font-size: 22px;">Your answer: </span>
-            <form method="POST"> {% csrf_token %} <br>
-                <input type="text", name="odgadywane" autofocus class="userInput"
-                    style="font-size:15px; height: 20px; text-align: center;">
-                <br> <br>
-                <input type="submit" value="Next" class="przycisk"
-                style="font-size: 20px; font-family: sans-serif;">
-            </form>        
-            <br>
-        </div>    
+        <div class="cardChild">            
+                <div class="guessingTranslateFirstItem">Tłumaczenie: </div>
+                
+                <form method="POST" class="guessingCenterItem"> {% csrf_token %}
+                    <input id="userInput" type="text", name="odgadywane" autofocus> <br>                                       
+                    <input type="submit" class="guessingLastItem" value="Next">
+            </form>
+                
+        </div>
+
     </div>
-</div>
 
 {% endblock %}

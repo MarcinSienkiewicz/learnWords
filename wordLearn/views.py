@@ -116,8 +116,7 @@ def result_view(request):
     # zrobić porównanie odpowiedzi i pytań, wyliczyć statystyki i przekazać
     # odpowiedć do template
 
-    results = calculate_result(request.session['user_answers'])
-    print(results[0])
+    results = calculate_result(request.session['user_answers'])    
     correct_ans = sum([1 if x[3]=='Correct!' else 0 for x in results])
     prc_correct = f"{correct_ans/len(results):.0%}"
     context = {
