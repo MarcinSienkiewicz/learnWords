@@ -25,7 +25,9 @@ Both pronunciation audio, as well as an image for the word being guessed, are sc
 - [diki.pl](https://www.diki.pl/) <- not as nice as Oxford but works much faster
 3. Images being scraped from: [unsplash](https://unsplash.com)
 
-## Prepare database input file
+## Prepare database input file - IGNORE this step
+This step is **not** required as the properly populated database is included in the project. This is just to show how I prepared the original txt file that was used for populating the appropriate table.
+
 To process raw_words.txt file so it is ready for the database run once:
 - clean_data.lean_data_file()
 - clean_data.add_word_level()
